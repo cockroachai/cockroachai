@@ -1,0 +1,10 @@
+version: '3'
+services:
+  cockroachai:
+    image: xyhelper/cockroachai:latest
+    restart: always
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./config:/app/config
+  
