@@ -46,3 +46,23 @@ vim config/config.yaml
 ```bash
 ./deploy.sh
 ```
+
+
+## 对接第三方账户体系
+配置环境变量或在config.yaml中配置
+```yaml
+OAUTH_URL: https://xxxxx.xxx.com/ouath
+```
+
+当该值被配置后，用户登陆时将向该地址POST以下数据
+```
+userToken: 用户Token
+```
+
+允许用户登陆接口应返回json数据
+```json
+{
+    "code": 1,
+}
+```
+其中code为1时表示允许登陆，其他值表示不允许登陆
