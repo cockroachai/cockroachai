@@ -63,6 +63,12 @@ userToken: 用户Token
 ```json
 {
     "code": 1,
+    "msg": "登陆失败时的提示信息",
+    "refreshCookie": "刷新Cookie，可选"
 }
 ```
 其中code为1时表示允许登陆，其他值表示不允许登陆
+
+msg为登陆失败时的提示信息
+
+refreshCookie为刷新Cookie，可选，如果不填写则使用本地配置的刷新Cookie
