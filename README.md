@@ -41,7 +41,7 @@ vim config/config.yaml
 
 修改 USERTOKENS 为用户Token，可以使用多个
 
-可以访问 [这里](https://demo.xyhelper.cn/getsession) 获取RefreshCookie
+可以访问 http://服务器IP:9000/getsession 获取RefreshCookie
 
 4.启动
 
@@ -74,3 +74,4 @@ userToken: 用户Token
 msg为登陆失败时的提示信息
 
 refreshCookie为刷新Cookie，可选，如果不填写则使用本地配置的刷新Cookie
+
