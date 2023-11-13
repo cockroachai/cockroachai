@@ -75,3 +75,12 @@ msg为登陆失败时的提示信息
 
 refreshCookie为刷新Cookie，可选，如果不填写则使用本地配置的刷新Cookie
 
+## 跳转登陆
+
+访问 
+
+```
+http://服务器IP:9000/logintoken?access_token=xxxx
+```
+
+xxxx 为可用的userToken
