@@ -48,7 +48,16 @@ vim config/config.yaml
 ```bash
 ./deploy.sh
 ```
+## 文件服务代理
 
+因官方文件服务屏蔽了文件服务的境内访问权限，要想正常上传文件及显示生成的图片，需要对文件服务器进行代理。
+
+通过配置文件参数或环境变量可以修改代理服务地址
+
+默认为 
+```yaml
+FILESERVER: https://files.xyhelper.cn
+```
 
 ## 对接第三方账户体系
 配置环境变量或在config.yaml中配置
