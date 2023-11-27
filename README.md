@@ -87,6 +87,12 @@ http://服务器IP:9000/logintoken?access_token=xxxx
 
 xxxx 为可用的userToken
 
+## 指定登陆页面地址
+配置环境变量或在config.yaml中配置
+```yaml
+LOGIN_CALLBACK: "/login"
+```
+当用户退出或登陆失效后会跳转到该页面。
 ## 如何开设免费公益服务器
 配置环境变量或在config.yaml中配置
 ```yaml
