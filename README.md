@@ -43,21 +43,14 @@ vim config/config.yaml
 
 可以访问 http://服务器IP:9000/getsession 获取RefreshCookie
 
+也可以访问 https://cockroachai.xyhelper.cn/getsession  获取RefreshCookie
+
 4.启动
 
 ```bash
 ./deploy.sh
 ```
-## 文件服务代理
 
-因官方文件服务屏蔽了文件服务的境内访问权限，要想正常上传文件及显示生成的图片，需要对文件服务器进行代理。
-
-通过配置文件参数或环境变量可以修改代理服务地址
-
-默认为 
-```yaml
-FILESERVER: https://files.xyhelper.cn
-```
 
 ## 对接第三方账户体系
 配置环境变量或在config.yaml中配置
@@ -93,3 +86,30 @@ http://服务器IP:9000/logintoken?access_token=xxxx
 ```
 
 xxxx 为可用的userToken
+
+## 如何开设免费公益服务器
+配置环境变量或在config.yaml中配置
+```yaml
+OAUTH_URL: http://127.0.0.1:9000/ouath
+```
+配置完成后重启服务，用户即可输入任意6位以上token完成登陆
+
+## 关于session.json
+cockroachai在运行过程中，会将账户session信息记录到  session.json文件。在应用重启后，如果发现存在session.json文件，将会优先使用session.json中的账号信息。
+
+手动修改session.json内容，可以将 /getsession 返回结果完整复制到该文件中保存。
+
+
+在配置了正确的session.json后，可以不配置refreshCookie.
+
+## 如何更新
+
+新版本镜像采用docker发布，可在程序安装目录执行  ./deploy.sh 进行更新，如有新版本发布，该命令会自动拉取新版本并重启服务。
+
+## 如果重启服务
+
+在程序安装目录执行
+```bash
+docker compose down
+./deploy.sh
+```
