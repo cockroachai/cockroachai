@@ -48,7 +48,6 @@
 | 11   | 雨葛葛             | 15706745520                                       | 正规充值号/api/代充代付等。营业时间：9:00am-2:00am             |
 | 12   | Lucky Wang         | [https://faka.aisvip.top](https://faka.aisvip.top) QQ：2643589579 | 五刀普号/0刀普号，GPT协议注册机/GPT软件定制等                  |
 | 13   | 超低价直连额度      | duckgpt007                                        | 直连api一💲0.6元，有量有价                                     |
-| 14   | Lucky Wang         | 网站：[https://faka.aisvip.top](https://faka.aisvip.top) QQ：2643589579 | 五刀普号/0刀普号，GPT协议注册机/GPT软件定制等                  |
 
 注：
 1. 排名不分先后，无参考价值。			
