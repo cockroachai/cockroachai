@@ -7,4 +7,7 @@ services:
       - "9000:9000"
     volumes:
       - ./config:/app/config
+    environment:
+      ASSET_PREFIX: https://oaistatic-cdn.closeai.biz
+
   

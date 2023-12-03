@@ -5,7 +5,6 @@ USERTOKENS: # 用户token,可配置多个
 
 # PROXY: "http://127.0.0.1:31280"  # 代理地址
 # OAUTH_URL: https://xxxxx.xxx.com/ouath
-
 database:
   default:
     type: "sqlite" # 数据库类型
