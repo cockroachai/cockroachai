@@ -94,7 +94,7 @@ vim config/config.yaml
 配置环境变量或在 config.yaml 中配置
 
 ```yaml
-OAUTH_URL: https://xxxxx.xxx.com/ouath
+OAUTH_URL: https://xxxxx.xxx.com/oauth
 ```
 
 当该值被配置后，用户登陆时将向该地址 POST 以下数据
