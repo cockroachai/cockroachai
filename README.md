@@ -167,6 +167,17 @@ ASSET_PREFIX: https://xxxxx.com
 
 部署静态文件服务的方法请参考仓库   https://github.com/cockroachai/cdn-oaistatic
 
+## 内容审核及限速服务
+如果有内容审核及限速(例如限制3小时20条)，可以配置限速服务接口
+
+```yaml
+AUDIT_LIMIT_URL: http://127.0.0.1:9612/audit_limit # 修改为你的审计限制接口url
+```
+不配置该项则不进行审计及限制
+
+可参考示例审核服务。 https://github.com/cockroachai/auditlimit
+
+
 ## 如何更新
 
 新版本镜像采用 docker 发布，可在程序安装目录执行 ./deploy.sh 进行更新，如有新版本发布，该命令会自动拉取新版本并重启服务。
