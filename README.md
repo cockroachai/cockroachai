@@ -75,13 +75,12 @@ cd cockroachai
 vim config/config.yaml
 ```
 
-修改 REFRESHCOOKIE 为你的账号的 Cookie
+配置管理员密码 ADMIN_PASSWORD: xxxxxxxx
 
 修改 USERTOKENS 为用户 Token，可以使用多个
 
-可以访问 http://服务器 IP:9000/getsession 获取 RefreshCookie
+访问 http://服务器 IP:9000/getsession 输入官网账号密码及管理员密码写入 session.json
 
-也可以访问 https://cockroachai.xyhelper.cn/getsession 获取 RefreshCookie
 
 4.启动
 
