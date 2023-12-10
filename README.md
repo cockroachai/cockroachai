@@ -93,7 +93,7 @@ vim config/config.yaml
 配置环境变量或在 config.yaml 中配置
 
 ```yaml
-OAUTH_URL: https://xxxxx.xxx.com/ouath
+OAUTH_URL: https://xxxxx.xxx.com/oauth
 ```
 
 当该值被配置后，用户登陆时将向该地址 POST 以下数据
@@ -165,6 +165,17 @@ ASSET_PREFIX: https://xxxxx.com
 默认为 https://oaistatic-cdn.closeai.biz
 
 部署静态文件服务的方法请参考仓库   https://github.com/cockroachai/cdn-oaistatic
+
+## 内容审核及限速服务
+如果有内容审核及限速(例如限制3小时20条)，可以配置限速服务接口
+
+```yaml
+AUDIT_LIMIT_URL: http://127.0.0.1:9612/audit_limit # 修改为你的审计限制接口url
+```
+不配置该项则不进行审计及限制
+
+可参考示例审核服务。 https://github.com/cockroachai/auditlimit
+
 
 ## 如何更新
 
