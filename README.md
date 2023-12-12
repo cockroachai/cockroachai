@@ -6,6 +6,25 @@
 
 交流群: https://t.me/xyhelper
 
+## 重要提示
+
+20231212 破坏性更新
+
+1. 本次更新调整了数据库结构,以适应后期更进一步程序功能完善
+2. 示例中提供了 mysql 配置示例,支持多实例共用同一数据库
+3. 本次更新会话表名由`conversation`更改为`conversations`,如需保留原有会话,请手动迁移。
+
+更新方法
+
+1. 修改 config.yaml 增加配置
+
+```yaml
+cool:
+  autoMigrate: true # 自动建表开关
+```
+
+2. 执行`./deploy.sh` 完成更新
+
 ## 功能
 
 - 自动刷新 AccessToken
@@ -32,28 +51,27 @@
 
 ## 号商推荐区
 
-
-| 序号 | xyhelper群内名称      | 可公布网站或其他联系方式                               | 业务范围                                                       |
-| ---- | ------------------ | -------------------------------------------------- | ----------------------------------------------------------- |
-| 1    | 成本               | 一般联系微信：LifelongJigsaw或者tg @chesterccj1   | 正规代充 / 个人Plus拼车 / 自组拼车。优惠不超卖。                |
-| 2    | visa开卡，💲代付GPT全资源供应商 | qq2712057416                                      | 正规充值号/退款流/api/各类代充/虚拟信用卡/国外实体信用卡等       |
-| 3    | 西瓜君              | qq2248200349                                      | 正规充值号，手动充值/api/代充等                                |
-| 4    | chatgpt            | qq:1498484059                                     | 正规充值号/退款流/代充                                         |
-| 5    | fk.lqqq.ltd        | [https://fk.lqqq.ltd](https://fk.lqqq.ltd)        | 普通/快速5刀号api批发                                          |
-| 6    | ChatGPT代售（K）   | QQ：1224478                                       | 出租或出售Chat GPT官方各种API额度和组织（纯一收货源）           |
-| 7    | cdw                | 15880283175                                       | 正规充值号/api/代充                                            |
-| 8    | Bruce              | 微信：look6785                                    | 专业正规代充/apikey接口                                        |
-| 9    | 终章               | [https://rao2-daili.hf.space/](https://rao2-daili.hf.space/)；QQ:2507838878 | 正规充值或成品号/api/各类代充等，手工代注册                    |
-| 10   | tobemyslf          | tobemyslf                                         | 正规plus售后30天/API中转                                       |
-| 11   | 雨葛葛             | 15706745520                                       | 正规充值号/api/代充代付等。营业时间：9:00am-2:00am             |
-| 12   | Lucky Wang         | [https://faka.aisvip.top](https://faka.aisvip.top) QQ：2643589579 | 五刀普号/0刀普号，GPT协议注册机/GPT软件定制等                  |
-| 13   | 超低价直连额度      | duckgpt007                                        | 直连api一💲0.6元，有量有价                                     |
+| 序号 | xyhelper 群内名称                   | 可公布网站或其他联系方式                                                    | 业务范围                                                                                                  |
+| ---- | ----------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| 1    | 成本                                | 一般联系微信：LifelongJigsaw 或者 tg @chesterccj1                           | 正规代充 / 个人 Plus 拼车 / 自组拼车。优惠不超卖。                                                        |
+| 2    | visa 开卡，💲 代付 GPT 全资源供应商 | qq2712057416                                                                | 正规充值号/退款流/api/各类代充/虚拟信用卡/国外实体信用卡等                                                |
+| 3    | 西瓜君                              | qq2248200349                                                                | 正规充值号，手动充值/api/代充等                                                                           |
+| 4    | chatgpt                             | qq:1498484059                                                               | 正规充值号/退款流/代充                                                                                    |
+| 5    | fk.lqqq.ltd                         | [https://fk.lqqq.ltd](https://fk.lqqq.ltd)                                  | 普通/快速 5 刀号 api 批发                                                                                 |
+| 6    | ChatGPT 代售（K）                   | QQ：1224478                                                                 | 出租或出售 Chat GPT 官方各种 API 额度和组织（纯一收货源）                                                 |
+| 7    | cdw                                 | 15880283175                                                                 | 正规充值号/api/代充                                                                                       |
+| 8    | Bruce                               | 微信：look6785                                                              | 专业正规代充/apikey 接口                                                                                  |
+| 9    | 终章                                | [https://rao2-daili.hf.space/](https://rao2-daili.hf.space/)；QQ:2507838878 | 正规充值或成品号/api/各类代充等，手工代注册                                                               |
+| 10   | tobemyslf                           | tobemyslf                                                                   | 正规 plus 售后 30 天/API 中转                                                                             |
+| 11   | 雨葛葛                              | 15706745520                                                                 | 正规充值号/api/代充代付等。营业时间：9:00am-2:00am                                                        |
+| 12   | Lucky Wang                          | [https://faka.aisvip.top](https://faka.aisvip.top) QQ：2643589579           | 五刀普号/0 刀普号，GPT 协议注册机/GPT 软件定制等                                                          |
+| 13   | 超低价直连额度                      | duckgpt007                                                                  | 直连 api 一 💲0.6 元，有量有价                                                                            |
+| 14   | 吴宾                                | 15604163368                                                                 | gpt 普号、plus 成品号和代充值，mj 成品号和代充值，一手退款流 plus，黑 plus，黑 mj，各业务零售批发都可来谈 |
 
 注：
-1. 排名不分先后，无参考价值。			
+
+1. 排名不分先后，无参考价值。
 2. 本站仅为群友征集整理公示，不参与任何利益关系，卖买双方自行洽谈，本站不对任何交易负责！
-
-
 
 ## 安装方法
 
@@ -80,7 +98,6 @@ vim config/config.yaml
 修改 USERTOKENS 为用户 Token，可以使用多个
 
 访问 http://服务器 IP:9000/getsession 输入官网账号密码及管理员密码写入 session.json
-
 
 4.启动
 
@@ -157,25 +174,28 @@ cockroachai 在运行过程中，会将账户 session 信息记录到 session.js
 在配置了正确的 session.json 后，可以不配置 refreshCookie.
 
 ## 静态文件服务
-为了避免多实例重复加载字体,js,css文件，可以配置环境变量或在 config.yaml 中配置
+
+为了避免多实例重复加载字体,js,css 文件，可以配置环境变量或在 config.yaml 中配置
 
 ```yaml
 ASSET_PREFIX: https://xxxxx.com
 ```
+
 默认为 https://oaistatic-cdn.closeai.biz
 
-部署静态文件服务的方法请参考仓库   https://github.com/cockroachai/cdn-oaistatic
+部署静态文件服务的方法请参考仓库 https://github.com/cockroachai/cdn-oaistatic
 
 ## 内容审核及限速服务
-如果有内容审核及限速(例如限制3小时20条)，可以配置限速服务接口
+
+如果有内容审核及限速(例如限制 3 小时 20 条)，可以配置限速服务接口
 
 ```yaml
 AUDIT_LIMIT_URL: http://127.0.0.1:9612/audit_limit # 修改为你的审计限制接口url
 ```
+
 不配置该项则不进行审计及限制
 
 可参考示例审核服务。 https://github.com/cockroachai/auditlimit
-
 
 ## 如何更新
 

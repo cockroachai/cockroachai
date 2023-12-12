@@ -15,6 +15,13 @@ USERTOKENS: # 用户token,可配置多个,本项内容支持热更新,更改后�
 
 # PROXY: "http://127.0.0.1:31280"  # 代理地址
 # OAUTH_URL: https://xxxxx.xxx.com/ouath
+
+# 注意注意,以下为新增配置,如需自动创建数据库,必加以下配置
+cool:
+  autoMigrate: true
+
+
+# sqlite数据库配置
 database:
   default:
     type: "sqlite" # 数据库类型
@@ -23,3 +30,19 @@ database:
     createdAt: "create_time" # 创建时间字段名称
     updatedAt: "update_time" # 更新时间字段名称
     # debug: true # 开启调试模式,启用后将在控制台打印相关sql语句
+
+# mysql数据库配置
+
+# database:
+#   default: # 数据源名称,当不指定数据源时 default 为默认数据源
+#     type: "mysql" # 数据库类型
+#     host: "127.0.0.1" # 数据库地址
+#     port: "3306" # 数据库端口
+#     user: "root" # 数据库用户名
+#     pass: "xxxxxxxxx" # 数据库密码
+#     name: "cockroachai" # 数据库名称
+#     charset: "utf8mb4" # 数据库编码
+#     timezone: "Asia/Shanghai" # 数据库时区
+#     # debug: true # 是否开启调试模式，开启后会打印SQL日志
+#     createdAt: "createTime" # 创建时间字段
+#     updatedAt: "updateTime" # 更新时间字段
