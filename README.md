@@ -160,7 +160,7 @@ LOGIN_CALLBACK: "/login"
 配置环境变量或在 config.yaml 中配置
 
 ```yaml
-OAUTH_URL: http://127.0.0.1:9000/ouath
+OAUTH_URL: http://127.0.0.1:9000/oauth
 ```
 
 配置完成后重启服务，用户即可输入任意 6 位以上 token 完成登陆
