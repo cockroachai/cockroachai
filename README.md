@@ -150,9 +150,9 @@ services:
 
 然后按F12 点击应用 获取cookie 即名为"__Secure-next-auth.session-token"的值
 
-然后打开当前目录下的config文件夹 创建配置文件(不创建配置文件将导致容器无法启动)
+然后创建并打开当前目录下的config文件夹 创建配置文件(不创建配置文件将导致容器无法启动)
 ```bash
-cd config && vim config.yaml
+mkdir config && cd config && vim config.yaml
 ```
 
 根据需求修改下述配置 并填写sessiontoken
