@@ -143,7 +143,7 @@ services:
 ```
 按一下 esc，然后 :wq 保存退出
 
-4.获取refreshtoken(针对第三方登录用户)
+4.获取refreshtoken **(针对第三方登录用户)**
 
 
 首先在电脑端打开https://chat.openai.com/api/auth/session (打开前确保你已在chat.openai.com登录)
@@ -214,8 +214,8 @@ database:
 ```bash
 cd .. && docker-compose up -d
 ```
-6.登录
-访问 http://服务器 IP:9000/getsession 输入官网账号密码及管理员密码写入 session.json(如前一步已填入refreshtoken 这一步可不用做)
+6.登录获取token **(如前一步已填入refreshtoken 这一步可不用做)**  
+访问 http://服务器 IP:9000/getsession 输入官网账号密码及管理员密码写入 session.json 
 
 
 
