@@ -155,7 +155,7 @@ services:
 mkdir config && cd config && vim config.yaml
 ```
 
-根据需求修改下述配置 并填写sessiontoken
+根据需求修改下述配置 并填写sessiontoken 配置管理员密码 ADMIN_PASSWORD: xxxxxxxx 修改 USERTOKENS 为用户 Token，可以使用多个
 
 ```bash
 # 以下配置兼容环境变量设置,配置文件优先级高于环境变量
@@ -165,7 +165,7 @@ REFRESHCOOKIE: "（将你获取的sessiontoken输入到此 记得删除括号内
 # LOGIN_CALLBACK: "/login" # 登录回调地址,用于指定自己的登录页面 默认值 "/login"
 # ASSET_PREFIX: https://oaistatic-cdn.closeai.biz # 静态资源前缀,用于指定自己的静态资源地址 默认值 https://oaistatic-cdn.closeai.biz
 # ARKOSE_URL: https://tcr9i.closeai.biz/v2/ # arkose地址,用于指定自己的arkose人机验证地址 默认值 https://tcr9i.closeai.biz/v2/
-# ADMIN_PASSWORD: xxxxx # 管理员密码 默认值为随机字符串,每次启动都会变化，可以在启动时通过日志查看，也可以指定一个固定值，方便管理
+ADMIN_PASSWORD: xxxxx # 管理员密码 默认值为随机字符串,每次启动都会变化，可以在启动时通过日志查看，也可以指定一个固定值，方便管理
 # AUDIT_LIMIT_URL: https://auditlimit.closeai.biz/audit_limit # 审计限制url 默认值 ""
 
 # 以下配置不兼容环境变量设置,只能通过配置文件设置
@@ -214,6 +214,8 @@ database:
 ```bash
 cd .. && docker-compose up -d
 ```
+6.登录
+访问 http://服务器 IP:9000/getsession 输入官网账号密码及管理员密码写入 session.json(如前一步已填入refreshtoken 这一步可不用做)
 
 
 
