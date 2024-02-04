@@ -45,6 +45,10 @@ cool:
 - 一个某 AI 的账号
 - 安装好了 Docker 和 Docker Compose
 
+## 社区二开组件  
+
+- [SoruxGPTPanel](https://github.com/liaosunny123/Sorux-GPT-Panel)：基于蟑螂的面板管理程序，支持多号多节点 ChatGPT 共享管理，且具有节点管理、用户管理、聊天审计、速率限制、聊天汇总查看、内置虚拟货币等等功能，可单独用于运营 ChatGPT 号商出租服务。  
+
 ## 主机商推荐区
 
 - 黑果云: https://www.hgidc.cn 国内持证商家，请咨询商家获取支持蟑螂的主机型号。
