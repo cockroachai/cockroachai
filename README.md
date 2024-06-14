@@ -33,11 +33,6 @@ cool:
 - 1:1 完全官网 UI，支持官网联网，插件，绘图等功能
 - 适合小团体或号商共享账号使用
 
-## 演示
-
-演示站点提供了部分免费的 PLUS 账号，输入任意 6 位以上 userToken 即可登陆。为了避免滥用，演示站使用 4.0 模型时需人机验证。
-
-[访问演示站点](https://xyhelper.cn/xq)
 
 ## 前置要求
 
@@ -71,7 +66,7 @@ vim config/config.yaml
 
 修改 USERTOKENS 为用户 Token，可以使用多个
 
-访问 http://服务器 IP:9000/getsession 输入官网账号密码及管理员密码写入 session.json
+访问 http://服务器 IP:9000/setup 输入refreshCookie(session-token) 写入 session.json
 
 4.启动
 
